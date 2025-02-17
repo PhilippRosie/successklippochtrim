@@ -1,0 +1,90 @@
+.navbarPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.navbarsHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    font-size: 23px;
+    background-color: #1A1819;
+    color: #FFFFFF;
+}
+
+.navbarContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 500px;
+    background-image: url('../../assets/images/Navbar/HeaderImage.png'); /* Ange rätt sökväg till din bild */
+    background-size: cover; /* Gör att bilden täcker hela containern */
+    background-position: center; /* Centrerar bilden */
+    background-repeat: no-repeat; /* Förhindrar att bilden upprepas */
+}
+
+.navbar {
+    display: flex;
+    justify-content: center; /* Centrerar listan horisontellt */
+    align-items: center; /* Vertikal centrering av innehållet */
+    list-style-type: none; /* Tar bort standardpunktlistan */
+    padding: 0; /* Tar bort standardpadding */
+    margin: 0; /* Tar bort standardmarginal */
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid #FFFFFF;
+
+  }
+
+.navbarList {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 20%;
+}
+
+.navbarItem {
+    display: inline-block; /* Gör att listobjekten visas horisontellt */
+    margin-right: 20px; /* Lägger till lite marginal mellan listobjekten */
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.navbarItem a {
+    position: relative;
+    text-decoration: none;
+    color: #1A1819;
+    transition: color 0.3s ease-in-out;
+  }
+
+  .navbarItem a::after {
+    content: '';
+    position: absolute;
+    left: -1px;
+    bottom: -2px; /* Justera efter behov */
+    width: 0;
+    height: 2px; /* Justera tjockleken på linjen */
+    background-color: #FFFFFF;
+    transition: width 0.3s ease-in-out;
+  }
+
+  .navbarItem a:hover {
+    color: #FFFFFF;
+    transition: width 0.3s ease-in-out;
+    text-shadow: 0 0 10px #1A1819, 0 0 20px #1A1819 , 0 0 30px #1A1819;
+  }
+
+  .navbarItem a:hover::after {
+    width: 100%;
+  }
+
+
