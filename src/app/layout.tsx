@@ -3,14 +3,28 @@ import Head from 'next/head';
 import './globals.css';
 import Home from './page';
 import Navbar from './components/Navbar/Navbar';
-import { Playfair_Display_SC } from 'next/font/google';
+import { Playfair_Display_SC, Allura, Economica } from 'next/font/google';
 import styles from './layout.module.css';
+
+
+
+
 const playfair_display_sc = Playfair_Display_SC({
   weight: '400',
   subsets: ['latin'],
 });
 
-export { playfair_display_sc };
+const allura = Allura({
+  weight: '400',
+  subsets: ['latin'],
+});
+
+const economica = Economica({
+  weight: '400',
+  subsets: ['latin'],
+});
+
+export { playfair_display_sc, allura, economica };
 
 type LayoutProps = {
   children: React.ReactNode;

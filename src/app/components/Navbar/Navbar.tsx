@@ -16,7 +16,7 @@ const Navbar: React.FC = () => {
       <ul className={styles.navbarList}>
         <li className={`${styles.navbarItem} ${playfair_display_sc.className}`}><a href="/">HEM</a></li>
         <li className={`${styles.navbarItem} ${playfair_display_sc.className}`}><a href="/">BEHANDLINGAR</a></li>
-        <Image src={logo} alt="Success Klipp och Trim" width={300} height={300} />
+        <Image className={styles.navbarLogo} src={logo} alt="Success Klipp och Trim" width={300} height={300} />
         <li className={`${styles.navbarItem} ${playfair_display_sc.className}`}><a href="/contact">KONTAKT</a></li>  
         <li className={`${styles.navbarItem} ${playfair_display_sc.className}`}><a href="/about">OM</a></li>
              
