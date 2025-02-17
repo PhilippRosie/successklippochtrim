@@ -17,8 +17,9 @@ const Navbar: React.FC = () => {
         <li className={`${styles.navbarItem} ${playfair_display_sc.className}`}><a href="/">HEM</a></li>
         <li className={`${styles.navbarItem} ${playfair_display_sc.className}`}><a href="/">BEHANDLINGAR</a></li>
         <Image src={logo} alt="Success Klipp och Trim" width={300} height={300} />
+        <li className={`${styles.navbarItem} ${playfair_display_sc.className}`}><a href="/contact">KONTAKT</a></li>  
         <li className={`${styles.navbarItem} ${playfair_display_sc.className}`}><a href="/about">OM</a></li>
-        <li className={`${styles.navbarItem} ${playfair_display_sc.className}`}><a href="/contact">KONTAKT</a></li>       
+             
       </ul>
     </nav>
     </div>
