@@ -31,8 +31,13 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 100%;
+  width: 70%;
   height: 100%;
+ 
+  padding: 20px;
+  margin-left: 5%;
+  margin-bottom: 50px;
+  
 }
 
 .homePageTextQuote {
@@ -70,6 +75,7 @@
   border-radius: 10px;
   margin-bottom: 50px;
   margin-right: 20%;
+  box-shadow: 0 0 10px 0 #252223;
 }
 
 
